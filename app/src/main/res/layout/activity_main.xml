@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bag">
+
+    <TextView
+        android:id="@+id/skoranda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skor Kamu : 0"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingVertical="14dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:background="#FFE4B5"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="265dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bhn"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/box_right"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tinja"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/black"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/orange"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bonus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pink"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/startlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Game Tangkap Bola"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/skortinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Skor Tertinggi Kamu : 300"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/fredoka_one"
+                android:onClick="mulaiGame"
+                android:text="MULAI"
+                android:textColor="#fff"
+                android:background="@drawable/custom2"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fredoka_one"
+                android:textColor="#fff"
+                android:background="@drawable/custom1"
+                android:onClick="quitGame"
+                android:text="KELUAR" />
+
+
+
+        </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>
